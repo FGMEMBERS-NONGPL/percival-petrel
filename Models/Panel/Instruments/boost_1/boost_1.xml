@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<PropertyList> 
+
+  <path>boost.ac</path>
+
+  <animation>
+    <object-name>fond</object-name>
+    <object-name>face</object-name>
+    <object-name>needle</object-name>
+
+    <object-name>vitre</object-name>
+  </animation>
+
+ <effect>
+    <inherits-from>Effects/model-transparent</inherits-from>
+      <object-name>vitre</object-name>
+    </effect>
+
+  <animation>
+    <type>noshadow</type>
+    <object-name>vitre</object-name>
+  </animation>
+
+  <animation>
+    <type>material</type>
+    <object-name>face</object-name>
+    <object-name>needle</object-name>
+    <emission>
+      <red>   0.7 </red>
+      <green> 0.7 </green>
+      <blue>  0.7 </blue>
+      <factor-prop>systems/electrical/outputs/instrument-lights</factor-prop>
+    </emission>
+  </animation>
+
+  <animation> 
+    <type>rotate</type>
+    <object-name>PointerTip</object-name>
+    <object-name>PointerCenter</object-name>
+    <property>engines/engine[1]/mp-inhg</property>
+    <interpolation> 
+      <entry><ind> 18.6 </ind><dep> -102.85 </dep></entry>
+      <entry><ind> 19.8 </ind><dep> -90.0 </dep></entry>
+      <entry><ind> 21 </ind><dep> -77.142 </dep></entry>
+      <entry><ind> 23.2 </ind><dep> -64.28 </dep></entry>
+      <entry><ind> 24.4 </ind><dep> -51.42 </dep></entry>
+      <entry><ind> 25.4 </ind><dep> -38.5 </dep></entry>
+      <entry><ind> 26.6 </ind><dep> -25.7 </dep></entry>
+      <entry><ind> 27.8 </ind><dep> -12.8 </dep></entry>
+      <entry><ind> 29 </ind><dep>   0 </dep></entry>
+      <entry><ind> 30.54 </ind><dep>   12.8 </dep></entry>
+      <entry><ind> 31.56 </ind><dep>  25.7 </dep></entry>
+      <entry><ind> 32.6 </ind><dep>  38.5 </dep></entry>
+      <entry><ind> 33.6 </ind><dep>  51.42 </dep></entry>
+      <entry><ind> 35 </ind><dep>  64.28 </dep></entry>
+      <entry><ind> 36.2 </ind><dep> 77.142 </dep></entry>
+      <entry><ind> 37.4 </ind><dep> 90 </dep></entry>
+      <entry><ind> 38.6 </ind><dep> 102.85 </dep></entry>
+      <entry><ind> 39.8 </ind><dep> 115.71 </dep></entry>
+      <entry><ind> 41 </ind><dep> 128.5 </dep></entry>
+      <entry><ind> 42.2 </ind><dep> 141.42 </dep></entry>
+      <entry><ind> 43.4 </ind><dep> 154.28 </dep></entry>
+      <entry><ind> 44.6 </ind><dep> 167.14 </dep></entry>
+      <entry><ind> 45.8 </ind><dep> 180.0 </dep></entry>
+      <entry><ind> 47 </ind><dep> 192.85 </dep></entry>
+    </interpolation>
+    <center> 
+      <x-m> -0.04 </x-m>
+      <y-m>  0.00 </y-m>
+      <z-m>  0.00 </z-m>
+    </center>
+    <axis> 
+      <x> -1 </x>
+      <y> 0 </y>
+      <z> 0 </z>
+    </axis>
+  </animation>
+
+</PropertyList>

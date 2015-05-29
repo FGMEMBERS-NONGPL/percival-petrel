@@ -1,0 +1,121 @@
+<?xml version="1.0"?>
+<PropertyList>
+ <sim>
+
+  <description>Percival-P16d-Q6-Petrel</description>
+  <author>Keith Paine modded 3D  by LesterBoffo</author>
+  <status>beta</status>
+
+  <flight-model>jsb</flight-model>
+  <aero>percival-petrel</aero>
+  <virtual-cockpit archive="y">false</virtual-cockpit>
+
+  <sound>
+   <path>Aircraft/percival-petrel/Sounds/petrel-sound.xml</path>
+  </sound>
+
+  <model>
+   <path>Aircraft/percival-petrel/Models/percival-petrel.xml</path>
+  </model> 
+
+   
+   <systems>
+   <autopilot>
+    <path>Aircraft/percival-petrel/systems/percival-petrel-autopilot.xml</path>
+   </autopilot>
+   <electrical>
+    <path>Aircraft/Generic/generic-electrical.xml</path>
+   </electrical>
+   <crash-detect>
+    <path>Aircraft/percival-petrel/Systems/crash-detect.xml</path>
+    </crash-detect>
+   <instrumentation>
+    <path>Aircraft/percival-petrel/Systems/instrumentation.xml</path>
+   </instrumentation>
+  </systems> 
+   
+  <view>
+   <internal archive="y">true</internal>
+   <config>
+     <!-- x/y/z == right/up/back -->
+     <x-offset-m archive="y">-0.328</x-offset-m>
+     <y-offset-m archive="y">0.956</y-offset-m>
+     <z-offset-m archive="y">-0.692</z-offset-m>
+     <pitch-offset-deg archive="y">-8.0</pitch-offset-deg>
+   </config>
+  </view>
+    
+ <!-- <x-offset-m archive="y">-0.398</x-offset-m>
+     <y-offset-m archive="y">0.896</y-offset-m>
+     <z-offset-m archive="y">-0.692</z-offset-m> -->
+
+  <chase-distance-m>-19</chase-distance-m>
+
+ <flaps>
+   <setting>0.000</setting>
+   <setting>0.25</setting> 
+   <setting>0.50</setting> 
+   <setting>0.75</setting> 
+   <setting>1.000</setting> 
+  </flaps>
+
+ </sim>
+
+ <radios>
+  <dme>
+    <switch-position>1</switch-position>
+  </dme>
+ </radios>
+
+<nasal>
+		<livery>
+			<file>Aircraft/percival-petrel/Nasal/livery.nas</file>
+		</livery>>
+		<lights>
+			<file>Aircraft/percival-petrel/Nasal/lights.nas</file>
+		</lights>
+		<tyresmoke>
+			<file>Aircraft/percival-petrel/Nasal/tyresmoke.nas</file>
+		</tyresmoke>
+	</nasal>
+
+
+ <controls>
+  <autoflight>
+   <display-mach type="bool">false</display-mach>
+  </autoflight>
+ </controls>
+
+<payload>
+	<weight>
+		<name type="string">Crew</name>
+		<weight-lb alias="/fdm/jsbsim/inertia/pointmass-weight-lbs[0]"/>
+		<min-lb type="double">175.0</min-lb>
+		<max-lb type="double">480.0</max-lb>
+	</weight>
+	
+	<weight>
+		<name type="string">Cargo_1</name>
+		<weight-lb alias="/fdm/jsbsim/inertia/pointmass-weight-lbs[1]"/>
+		<min-lb type="double">100.0</min-lb>
+		<max-lb type="double">420.0</max-lb>
+	</weight>
+	
+	<weight>
+		<name type="string">passengers</name>
+		<weight-lb alias="/fdm/jsbsim/inertia/pointmass-weight-lbs[2]"/>
+		<min-lb type="double">160.0</min-lb>
+		<max-lb type="double">900.0</max-lb>
+	</weight>
+   </payload>
+
+<engines>
+  <engine n="0">
+    <running>true</running>
+  </engine>
+  <engine n="1">
+    <running>true</running>
+  </engine>
+ </engines>
+
+</PropertyList>

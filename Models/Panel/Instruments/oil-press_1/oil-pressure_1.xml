@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<PropertyList> 
+
+  <path>oil-pressure.ac</path>
+
+  <animation>
+    <object-name>fond</object-name>
+    <object-name>face</object-name>
+    <object-name>needle</object-name>
+
+    <object-name>vitre</object-name>
+  </animation>
+
+<effect>
+    <inherits-from>Effects/model-transparent</inherits-from>
+      <object-name>vitre</object-name>
+    </effect>
+
+  <animation>
+    <type>noshadow</type>
+    <object-name>vitre</object-name>
+  </animation>
+
+  <animation>
+    <type>material</type>
+    <object-name>face</object-name>
+    <object-name>needle</object-name>
+    <emission>
+      <red>   0.7 </red>
+      <green> 0.7 </green>
+      <blue>  0.7 </blue>
+      <factor-prop>systems/electrical/outputs/instrument-lights</factor-prop>
+    </emission>
+  </animation>
+
+  <animation> 
+    <type>rotate</type>
+    <object-name>needle</object-name>
+    <property>engines/engine[1]/oil-pressure-psi</property>
+    <interpolation> 
+      <entry><ind> 0 </ind><dep> -30 </dep></entry>
+      <entry><ind> 12 </ind><dep> -26 </dep></entry>
+      <entry><ind> 24 </ind><dep> -22 </dep></entry>
+      <entry><ind> 36 </ind><dep>  -18 </dep></entry>
+      <entry><ind> 48 </ind><dep>  -15 </dep></entry>
+      <entry><ind> 60 </ind><dep>  -10 </dep></entry>
+      <entry><ind> 72 </ind><dep>  -5 </dep></entry>
+      <entry><ind> 84 </ind><dep>  -0 </dep></entry>
+      <entry><ind> 96 </ind><dep>  5 </dep></entry>
+    </interpolation>
+    <center> 
+      <x-m> -0.04 </x-m>
+      <y-m>  0.00 </y-m>
+      <z-m>  0.00 </z-m>
+    </center>
+    <axis> 
+      <x>  0 </x>
+      <y> -1 </y>
+      <z>  0 </z>
+    </axis>
+  </animation>
+
+</PropertyList>

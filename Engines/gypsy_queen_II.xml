@@ -1,0 +1,43 @@
+<?xml version="1.0"?>
+<!--
+  File:     gypsy_queen_II.xml
+  Author:   modded from Cygnet-II's Cirrus Moth engine 
+
+  Inputs:
+    name:           DeHavilland Gypsy Queen II
+    type:           piston
+    power:          245.0 hp
+    augmented?      no
+    supercharged?   yes
+    injected?       no
+-->
+
+<piston_engine name="gypsy_queen_II">
+  <minmp unit="INHG">          10.0 </minmp>
+  <maxmp unit="INHG">         29.9 </maxmp>
+  <displacement unit="IN3"> 560.6 </displacement>
+  <stroke unit="IN">  5.512  </stroke> 
+  <bore unit="IN">  4.646 </bore> 
+  <cylinders> 6  </cylinders>
+  <cylinder-head-mass> 63 </cylinder-head-mass>
+  <compression-ratio> 6.0 </compression-ratio>
+  <static-friction> 0.318 </static-friction>
+  <maxhp>         230.00 </maxhp>
+  <bsfc>  0.435 </bsfc>
+  <cycles>         4.0 </cycles>
+  <idlerpm>      550.0 </idlerpm>
+  <maxrpm>      2400.0 </maxrpm>
+  <maxthrottle>    1.0 </maxthrottle>
+  <minthrottle>    0.1 </minthrottle>
+  <sparkfaildrop> 0.1 </sparkfaildrop>
+  <cooling-factor> 0.89 </cooling-factor>
+  <volumetric-efficiency> 0.79 </volumetric-efficiency>
+  <numboostspeeds>        1   </numboostspeeds>
+  <boostoverride>         0   </boostoverride>
+  <ratedboost1>     7.0 </ratedboost1> 
+  <ratedpower1>    225    </ratedpower1>
+  <ratedrpm1>      2350    </ratedrpm1>
+  <ratedaltitude1> 7000    </ratedaltitude1>
+
+  <takeoffboost>  7.0   </takeoffboost>
+</piston_engine>
