@@ -5,7 +5,7 @@ kids 1
 OBJECT poly
 name "mixture"
 loc 0.146967 0.0781882 0.103846
-texture "C:/Program Files/FlightGear 2.6.0/FlightGear/data/Aircraft/Cygnet_II/Models/cygnet2.png"
+texture "Aircraft/Cygnet_II/Models/cygnet2.png"
 numvert 91
 -0.419973 0.115123 0.00429729
 -0.420856 0.117105 0.00519991
